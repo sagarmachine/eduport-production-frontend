@@ -11,7 +11,7 @@ import Axios from 'axios';
 
 Axios.defaults.baseURL=
 
-                        "http://eduport-env.eba-wmqmbe9r.us-east-2.elasticbeanstalk.com/api" ;
+                        "http://eduportproduction-env.eba-ehkgihnq.ap-south-1.elasticbeanstalk.com/api" ;
                          // "http://localhost:8081/api";
 
 ReactDOM.render(
