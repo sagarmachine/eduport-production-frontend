@@ -15,34 +15,53 @@ class AboutUs extends Component{
 
 
   state={
-    r1h1:"",
-    r1p1:"",
-    r1p2:"",
-    r2h1:"",
-    r2p1:"",
-    r2p2:"",
-    r3h1:"",
-    r3p1:"",
-    r3p2:"",
-    r4h1:"",
-    r4p1:"",
-    r4p2:"",
-    r5h1:"",
-    team:[
-        {name:"",
-        position:"",
-           gender:"",}
-    ],
-    loading:true,
+    
+     //1
+      "r1h1": "123",//heading
+      "r1p1": "234",//paragraph
+      "r1p2": "243",//paragraph
+  
+    //2  
+      "r2h1": "342432",
+      "r2p1": "34243",
+      "r2p2": "42",
+      
+    //3
+      "r3h1": "",
+      "r3p1": "",
+      "r3p2": "",
+  
+    //4  
+      "r4h1": "",
+      "r4p1": "",
+      "r4p2": "",
+      
+
+      "r5h1": "Our Strength ",
+   
+   //team
+      "team": [
+          {
+              "name": "Alex",
+              "position": "Product Manager",
+              "gender": "female"
+          },
+          {
+              "name": "Cray",
+              "position": "President",
+              "gender": "male"
+          }
+      ]
+  
 }
   componentDidMount=()=>{
     window.scrollTo({top:0,behavior:"smooth"})
     Aos.init({duration:1500,once:true});
 
-    axios.get("/v1/content/about").then(res=>{
-      console.log(res);
-      this.setState({...res.data,loading:false});
-  }).catch(err=>{this.setState({loading:false});alert("oops")})
+  //   axios.get("/v1/content/about").then(res=>{
+  //     console.log(JSON.stringify(res.data));
+  //     this.setState({...res.data,loading:false});
+  // }).catch(err=>{this.setState({loading:false});alert("oops")})
 
   }
 

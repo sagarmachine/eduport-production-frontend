@@ -9,14 +9,24 @@ import axios from "axios"
 
     state={
 
-      formData:{
+      
+        "id": 1,
+        "h1": "h1",//heading 1
+        "h2": "h2",//heading 2
+        "h3": "h3",//heading 3
+        
+        "c1": "c1",//category 1
+        "c2": "c2",//category 2
+        "c3": "c3",//category 3
+     
+        formData:{
         name:'',
         phone:"",
         email:'',
         preference:null,
         counselling:true,
       },
-      loading1:true,
+      // loading1:true,
       loading:false
     }
 
@@ -55,9 +65,10 @@ import axios from "axios"
 
 
 
-      axios.get("/v1/content/contact").then(res=>{
-        this.setState({... res.data,loading1:false});
-    }).catch(err=>{this.setState({loading1:false});alert("oops")})
+    //   axios.get("/v1/content/contact").then(res=>{
+    //     this.setState({... res.data,loading1:false});
+    //     console.log(JSON.stringify(res.data))
+    // }).catch(err=>{this.setState({loading1:false});alert("oops")})
 
     }
 

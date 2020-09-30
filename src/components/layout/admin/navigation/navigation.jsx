@@ -57,13 +57,9 @@ class AdminNavigation extends Component{
                  </div>:null}
             </div>
             <nav  className="navigation__items">
-                  <NavLink exact style={{color:style.color}} activeStyle={{color: "#0f3460",textDecoration:"underline"}} to="/admin"><div className="navigation__items-item">Home</div></NavLink>
-                  <NavLink  style={{color:style.color}} activeStyle={{color: "#0f3460",textDecoration:"underline"}} to="/admin/pricing"><div className="navigation__items-item">Pricing</div></NavLink>
-                  <NavLink style={{color:style.color}} activeStyle={{color: "#0f3460",textDecoration:"underline"}} to="/admin/aboutUs"><div className="navigation__items-item">About</div></NavLink>
+                  <NavLink exact style={{color:style.color}} activeStyle={{color: "#0f3460",textDecoration:"underline"}} to="/admin"><div className="navigation__items-item">list</div></NavLink>
                   <NavLink style={{color:style.color}} activeStyle={{color: "#0f3460",textDecoration:"underline"}} to="/admin/blogs"><div className="navigation__items-item">blogs</div></NavLink>
-                  <NavLink style={{color:style.color}} activeStyle={{color: "#0f3460",textDecoration:"underline"}} to="/admin/contactUs"><div className="navigation__items-item">contact</div></NavLink>
-                  <NavLink style={{color:style.color}} activeStyle={{color: "#0f3460",textDecoration:"underline"}} to="/admin/studentList"><div className="navigation__items-item">student</div></NavLink>
-                  <div onClick={()=> window.location="http://vast-reaches-61761.herokuapp.com"} style={{color:"grey",cursor:"pointer"}} className="navigation__items-item"><i className="fa fa-sign-out fa-2x" aria-hidden="true"></i></div>
+                 <div onClick={()=> window.location="http://vast-reaches-61761.herokuapp.com"} style={{color:"grey",cursor:"pointer"}} className="navigation__items-item"><i className="fa fa-sign-out fa-2x" aria-hidden="true"></i></div>
             </nav>
 
 
